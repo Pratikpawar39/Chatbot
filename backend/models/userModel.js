@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+//create schema for 'User' 
 const userModel = mongoose.Schema(
     {
         name: { type: String, required: true},
@@ -26,4 +28,4 @@ module.exports = User;
 //name
 //email
 //password
-//pic    //pic in string format 
+//pic    //pic in string format  

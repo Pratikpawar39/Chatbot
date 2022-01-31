@@ -1,9 +1,11 @@
 const express = require('express');
 const dotenv = require('dotenv'); //loads environment variables from a .env file into process.env 
 const {chats}  = require('./data');//import dummy data from data.js
+const connectDB = require('./config/db');
 
 const app = express();
 dotenv.config(); // Storing configuration in the environment separate from code 
+connectDB();
 
 
 //express Js API 
